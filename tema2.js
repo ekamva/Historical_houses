@@ -18,10 +18,13 @@ GHH.onclick = function () {
 };
 
 
-//Knapp HH
+//Knapp HH, bilder av mobler og tekstbeskrivelse
 
 	
 HH.onclick = function () {
+	
+	
+	
 	document.getElementById("f0").src = "./img/The Hammond House.jpg";
 	document.getElementById("f1").src = "./img/HH.jpg";
 	document.getElementById("f2").src = "./img/HH-2.jpg";
@@ -31,9 +34,7 @@ HH.onclick = function () {
 	
 };
 
-//Knapp W
-
-
+//Knapp W, bilder av mobler og tekstbeskrivelse
 W.onclick = function () {
 	document.getElementById("f0").src = "./img/Westchester.jpg";
 	document.getElementById("f1").src = "./img/W-1.jpg";
@@ -46,7 +47,7 @@ W.onclick = function () {
 
 
 
-// Knapp AWH
+// Knapp AWH, bilder av mobler og tekstbeskrivelse
 AWH.onclick = function () {
 	document.getElementById("f0").src = "./img/Adelaide Wilcox House.jpg";
 	document.getElementById("f1").src = "./img/AW-1.jpg";
@@ -55,7 +56,7 @@ AWH.onclick = function () {
 	document.getElementById("imageTitle").innerText = "The Adelaide Wilcox House. Was built in 1852-1853";
 	document.getElementById("f4").innerHTML = "The house at 880 Hopmeadow Street in Simsbury, named for Miss Adelaide Wilcox, was built in 1852-1853 and has been owned by a number of prominent families associated with the Ensign Bickford Company. Originally having an Italianate design, the house was altered to the Neo-Classical Revival style around 1900. Also added was a third floor with a grand ballroom. Since 1969 the house has been the Vincent Funeral Home."
 };
-// Knapp B
+// Knapp B, bilder av mobler og tekstbeskrivelse
 B.onclick = function (){
 	document.getElementById("f0").src = "./img/Broomhill-Manor.jpg";
 	document.getElementById("f1").src = "./img/B-1.jpg";
@@ -64,7 +65,7 @@ B.onclick = function (){
 	document.getElementById("imageTitle").innerText = "The Broomhill-Manor house. Located on Poughill, Bude, Cornwall, EX23 9HA.";
 	document.getElementById("f4").innerHTML = "Elegant and spacious, this large, well-appointed and self-contained Apartment is in the West wing of the Manor House. On entering through an entrance on the ground floor into a large hallway, a staircase leads to the accommodation; there is a twin bedroom on the half landing and the main accommodation is on the first floor of the Manor House. The Apartment sleeps six and comprises a large open plan lounge/kitchen overlooking the main lawn and a separate dining room with sea view."
 }
-// Knapp G
+// Knapp G, bilder av mobler og tekstbeskrivelse
 G.onclick = function (){
 	document.getElementById("f0").src = "./img/Galveston.jpg";
 	document.getElementById("f1").src = "./img/G-1.jpg";
@@ -83,10 +84,10 @@ let i = 0;
 let bilder = [];
 let interval = 0;
 
-bilder[0] = "url(./img/castle1.jpg)";
-bilder[1] = "url(./img/castle2.jpg)";
-bilder[2] = "url(./img/castle3.jpg)";
-bilder[3] = "url(./img/castle4.jpg)";
+bilder[0] = "url(./img/Westchester.jpg)";
+bilder[1] = "url(./img/Adelaide Wilcox House.jpg)";
+bilder[2] = "url(./img/Broomhill-Manor.jpg)";
+bilder[3] = "url(./img/Galveston.jpg)";
 
 
 
@@ -99,10 +100,11 @@ function slideshow() {
 	else { i = 0;
 	}
 	clearInterval(interval);
-	interval=setInterval("slideshow()", 2000);	
+	interval=setInterval("slideshow()", 3000);	
 	
 } 
 
+window.onload = slideshow;
 
 //---overlay triks-
 function move(evt){
